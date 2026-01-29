@@ -1,0 +1,26 @@
+[
+  {
+    "outputFile": "StructureDefinition-child.json",
+    "fshName": "Child",
+    "fshType": "Profile",
+    "fshFile": "example.fsh",
+    "startLine": 13,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-my-extension.json",
+    "fshName": "MyExtension",
+    "fshType": "Extension",
+    "fshFile": "example.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "StructureDefinition-parent.json",
+    "fshName": "Parent",
+    "fshType": "Profile",
+    "fshFile": "example.fsh",
+    "startLine": 6,
+    "endLine": 11
+  }
+]

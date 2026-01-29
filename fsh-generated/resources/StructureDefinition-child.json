@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "child",
+  "url": "http://example.org/StructureDefinition/child",
+  "name": "Child",
+  "status": "draft",
+  "fhirVersion": "6.0.0-ballot3",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ArtifactAssessment",
+  "baseDefinition": "http://example.org/StructureDefinition/parent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ArtifactAssessment.content",
+        "path": "ArtifactAssessment.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:outcome",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "outcome",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ArtifactAssessment.content:outcome.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1
+      },
+      {
+        "id": "ArtifactAssessment.content:outcome.component.extension:MyExtension",
+        "path": "ArtifactAssessment.content.component.extension",
+        "sliceName": "MyExtension"
+      }
+    ]
+  }
+}

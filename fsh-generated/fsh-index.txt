@@ -1,0 +1,4 @@
+Output File                            Name         Type       FSH File     Lines
+StructureDefinition-child.json         Child        Profile    example.fsh  13 - 21
+StructureDefinition-my-extension.json  MyExtension  Extension  example.fsh  1 - 4
+StructureDefinition-parent.json        Parent       Profile    example.fsh  6 - 11
